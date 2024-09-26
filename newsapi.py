@@ -27,13 +27,3 @@ class NewsAPIClient:
 
         response = requests.get(self.url, headers=self.headers)
         return response.json()
-
-
-
-if __name__ == '__main__':
-    
-    News = NewsAPIClient()
-    response = News.everything(query='Apple Watch Ultra 2', pageSize=5)
-
-    File_M = FileManager('outputs/')
-    File_M.put_into_json('output2.json', response)

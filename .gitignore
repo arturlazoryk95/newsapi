@@ -2,4 +2,4 @@
 .git
 .venv
 __pycache__/
-articles_dump/
+outputs/
