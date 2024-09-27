@@ -19,5 +19,5 @@ class FileManager:
         with open(file_path, 'w', encoding='utf-8') as file:
             json.dump(content, file, ensure_ascii=False, indent=4)
     
-        print('File created.')
+        print(f'{file_path} created.')
     
